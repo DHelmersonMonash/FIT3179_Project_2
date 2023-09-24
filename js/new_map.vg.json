@@ -32,18 +32,6 @@
       "data": {
         "url": "https://raw.githubusercontent.com/DHelmersonMonash/FIT3179_Project_2/main/data/accidents.csv"
       },
-      "mark": {"type": "point", "tooltip": {"content": "data"}},
-      "encoding": {
-        "longitude": {"field": "Start_Lat", "type": "quantitative"},
-        "latitude": {"field": "Start_Lng", "type": "quantitative"},
-        "size": {"scale": {"domain": [4, 8]}}
-      }
-    },
-
-    {
-      "data": {
-        "url": "https://raw.githubusercontent.com/DHelmersonMonash/FIT3179_Project_2/main/data/accidents.csv"
-      },
       "mark": {"type": "circle", "tooltip": {"content": "data"}},
       "encoding": {
         "longitude": {"field": "Start_Lng", "type": "quantitative"},
