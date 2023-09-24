@@ -3,7 +3,7 @@
   "width": 800,
   "height": 450,
   "title": "Earthquakes of magnitude 4 or large between 4 Oct 2020 and 10 Oct 2020",
-  "projection": {"type": "equalEarth"},
+  "projection": {"type": "albers"},
   "layer": [
     {
       "data": {
