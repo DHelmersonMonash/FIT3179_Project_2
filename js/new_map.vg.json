@@ -10,14 +10,45 @@
         "url": "https://raw.githubusercontent.com/DHelmersonMonash/FIT3179_Project_2/main/js/ne_10m.topojson",
         "format": {"type": "topojson", "feature": "ne_10m_admin_1_states_provinces"}
       },
-      "mark": {"type": "geoshape", "fill": "lightgray", "stroke": "white"}
+      "mark": {"type": "geoshape", "fill": "lightgray","stroke": "white"}
+    },
+
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/DHelmersonMonash/FIT3179_Project_2/main/js/ne_10m.topojson",
+        "format" : {"type": "topojson", "feature": "ne_10m_urban_areas"}
+      },
+      "mark": {"type": "geoshape", "fill":"lightblue"}
     },
     {
       "data": {
         "url": "https://raw.githubusercontent.com/DHelmersonMonash/FIT3179_Project_2/main/js/ne_10m.topojson",
         "format" : {"type": "topojson", "feature": "ne_10m_roads"}
       },
-      "mark": {"type": "line", "stroke":"black"}
+      "mark": {"type": "geoshape", "filled": false, "stroke": "dimgrey"}
+    },
+
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/DHelmersonMonash/FIT3179_Project_2/main/data/accidents.csv"
+      },
+      "mark": {"type": "point", "tooltip": {"content": "data"}},
+      "encoding": {
+        "longitude": {"field": "Start_Lat", "type": "quantitative"},
+        "latitude": {"field": "Start_Lng", "type": "quantitative"},
+        "size": {"scale": {"domain": [4, 8]}}
+      }
+    },
+
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/DHelmersonMonash/FIT3179_Project_2/main/data/accidents.csv"
+      },
+      "mark": {"type": "circle", "tooltip": {"content": "data"}},
+      "encoding": {
+        "longitude": {"field": "Start_Lat", "type": "quantitative"},
+        "latitude": {"field": "Start_Long", "type": "quantitative"}
+      }
     }
   ]
 }
