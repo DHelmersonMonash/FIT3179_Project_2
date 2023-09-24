@@ -46,8 +46,8 @@
       },
       "mark": {"type": "circle", "tooltip": {"content": "data"}},
       "encoding": {
-        "longitude": {"field": "Start_Lat", "type": "quantitative"},
-        "latitude": {"field": "Start_Long", "type": "quantitative"}
+        "longitude": {"field": "Start_Lng", "type": "quantitative"},
+        "latitude": {"field": "Start_Lat", "type": "quantitative"}
       }
     }
   ]
